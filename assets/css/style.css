@@ -22,6 +22,11 @@ body, html{
     font-family: var(--font-standard);
 }
 
+body.lock-scroll {
+    overflow: hidden;
+}
+
+
 /*HEADER*/
 
 .header-wrapper{
@@ -37,18 +42,25 @@ body, html{
     animation: backgroundTransition 8s ease-in-out infinite;
 }
 
+.header-main{
+    text-align: center;
+}
+.header-main p{
+    font-size: 1.2em;
+    margin: 2px;
+}
 h1{
-    text-transform: uppercase;
     letter-spacing: 4px;
     color: #ffffff;
     font-size: 2.5em;
+    margin: 0;
 }
 
 h2{
-    text-transform: uppercase;
     letter-spacing: 4px;
     color: #ffffff;
     font-size: 1.3em;
+    margin: 5px;
 }
 
 .social-media{
@@ -251,6 +263,30 @@ a:hover{
     overflow: hidden;
 }
 
+/* web presence */
+
+.base{
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    color: var(--color-text);
+    margin: auto;
+    padding: 20px 0;
+}
+
+.base h3{
+    width: 45%;
+    text-wrap: wrap;
+    font-size: 2em;
+}
+
+.introduction p{
+    max-width: 70%;
+}
+
+.emphasis{
+    border-bottom: var(--color03) 1px solid;
+}
 /* Cards */
 
 .container{
@@ -365,6 +401,12 @@ a{
     .social-media{
         display: flex;
         flex-direction: column;
+    }
+
+    .introduction, h3, p{
+        max-width: none;
+        min-width: 300px;
+        padding-left: 20px;
     }
 
     .container{
