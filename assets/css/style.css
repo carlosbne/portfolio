@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap');
 
-body{
+:root{
+    --font-standard: 'Gothic A1', sans-serif;
+
+    /* Try colors */
+    --color-background: #e4eeff;
+    --color-text: #003b4a;
+}
+
+body, html{
     padding: 0;
     margin: 0;
     color: #ffffff;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: var(--font-standard);
 }
 
 /*HEADER*/
 
 .header-wrapper{
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     background: linear-gradient(-45deg, #050404, #2e1c2b, #4a1942, #893168);
     background-size: 400% 400%;
     display: flex;
@@ -26,14 +34,14 @@ h1{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #ffffff;
-
+    font-size: 2.5em;
 }
 
 h2{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #ffffff;
-
+    font-size: 1.3em;
 }
 
 .social-media{
@@ -221,7 +229,7 @@ a:hover{
     height: 300px;
     width: 400px;
     margin: 3rem 0 0 0;
-    background-image: url(/679478.jpg);
+    background-image: url(/assets/img/679478.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
