@@ -42,6 +42,25 @@ body.lock-scroll {
     animation: backgroundTransition 8s ease-in-out infinite;
 }
 
+.logo a{
+    height: 70px;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    z-index: 9999;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+
+/* .logo a:hover{
+} */
+
 .header-main{
     text-align: center;
 }
@@ -81,7 +100,7 @@ h2{
     transition: .5s cubic-bezier(0.55, 0.925, 0.675, 0.97);
 }
 
-a:hover{
+.social-media a:hover{
     color: var(--color-text);
     background: #ffffff;
 }
@@ -196,15 +215,14 @@ a:hover{
 
 .link {
     color: var(--color-text);
-    
     position: relative;
   }
   
-  .link:hover {
+.link:hover {
     color: var(--color-text);
   }
   
-  .link::before {
+.link::before {
     content: "";
     display: inline;
     width: 0%;
@@ -215,8 +233,8 @@ a:hover{
     transition: width 0.2s ease-in;
   }
   
-  .link:hover::before,
-  .link:focus::before {
+.link:hover::before,
+.link:focus::before {
     width: 100%;
   }
   
