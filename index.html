@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/img/code-solid.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5cd7e693cc.js" crossorigin="anonymous"></script>
     <title>Carlos Neto</title>
 </head>
 <body>
-    <header class="header-wrapper">
+    <header class="header-wrapper" id="home">
         <div class="logo">
             <a href="#">&lt;Carlos Neto/&gt;</a>
         </div>
-        <section class="header" id="home">
+        <section class="header">
             <section class="checkbox-container">
                 <div class="checkbox-wrapper">
                     <input type="checkbox" id="toggle">
@@ -22,18 +23,22 @@
                         <div class="trace"></div>
                         <div class="trace"></div>
                     </label>
-                    <div class="menu"></div>
+                    <div class="menu" id="menu"></div>
                     <nav class="menu-items">
                         <ul>
                             <li>
-                                <a class="link nav-item" href="">Início</a>
+                                <a class="link nav-item" href="#presence">Início</a>
                             </li>
                             <li>
-                                <a class="link nav-item" href="">Projetos</a>
+                                <a class="link nav-item" href="#projects">Projetos</a>
                             </li>
                             <li>
-                                <a class="link nav-item" href="">Sobre</a>
+                                <a class="link nav-item" href="#services">Serviços</a>
                             </li>
+                            <li>
+                                <a class="link nav-item" href="#about">Sobre</a>
+                            </li>
+                            <li><a class="link nav-item" href="#contact">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -55,7 +60,7 @@
             <p>Quando alguém precisa do que você oferece, seu site consegue atrair essa pessoa? O que ela verá se estiver acessando pelo celular? Ter uma presença digital responsiva e acessível não é mais apenas um 'bônus' ou um 'agradável de ter' - é essencial.</p>
             <p>Tenho o prazer de oferecer visibilidade na web para pequenos negócios e indivíduos da minha comunidade. Seja criando um site do zero para você ou modernizando uma presença existente para a era móvel. Meu objetivo é proporcionar um espaço onde os interessados possam encontrar e aprender sobre o que você oferece. <span class="emphasis">Como posso ajudar você hoje</span>?</p>
         </section>
-        <section class="work container" id="projects">
+        <section class="work container base" id="projects">
             <h3>Projetos</h3>
             <section class="card-container">
                 <div class="card-text">
@@ -64,16 +69,15 @@
                 </div>
                 <div class="card">
                     <div class="card-wrapper">
-                        <h2>Github</h2>
+                        <h2>Projeto1</h2>
                         <p>Veja meus projetos</p>
                     </div>
-                
                 </div>
             </section>
             <section class="card-container">
                 <div class="card">
                     <div class="card-wrapper">
-                        <h2>Linkedin</h2>
+                        <h2>Projeto2</h2>
                         <p>Acompanhe minha carreira</p>
                     </div>
                 </div>
@@ -90,14 +94,14 @@
     
                 <div class="card">
                     <div class="card-wrapper">
-                        <h2>Instagram</h2>
+                        <h2>Projeto3</h2>
                         <p>Ou mais do meu dia-a-dia</p>
                     </div>
                 
                 </div>
             </div>
         </section>
-        <section class="services base">
+        <section class="services base" id="services">
             <h3>Meus Serviços</h3>
             <p>Dedico-me a entregar aos meus clientes projetos concluídos que não apenas atendem, mas superam suas expectativas iniciais. Saber o que esperar quando trabalhamos juntos é fundamental - aqui está como garanto o sucesso:</p>
             <ol>
@@ -107,18 +111,24 @@
                 <li>Lançamento e Suporte - Tranquilidade garantida com o projeto finalizado, acompanhado de suporte contínuo disponível.</li>
             </ol>
         </section>
-        <section id="about" class="about base">
+        <section class="about base" id="about">
             <h3>Sou um Desenvolvedor de Software <br> residente em Natal, BR</h3>
             <p>Tenho experiência em resolver problemas e criar soluções que são elegantes, inovadoras e acessíveis. Gosto de enfrentar desafios e transformá-los em oportunidades para desenvolver produtos que não não apenas funcionem de forma eficiente, mas também oferecem uma ótima experiência para os usuários.</p>
             <p>Quando não estou programando, você pode me encontrar lendo livros de ficção e fantasia, adicionando jogos à minha coleção na Steam, estudando idiomas aleatórios e praticando diferentes hobbies (mais recentemente, desenhos digitais).</p>
         </section>
-        <section class="contact base">
+        <section class="contact base" id="contact">
             <h3>Vamos conversar!</h3>
-            <p>Atualmente, estou aceitando novos clientes freelance, oportunidades de projetos interessantes e .</p>
+            <p>Atualmente, estou aceitando novos clientes freelance, oportunidades de projetos interessantes.</p>
         </section>
     </main>
     <footer class="footer">
-        Feito por Carlos Neto
+        <p>Feito por Carlos Neto</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/carlosbne/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="https://github.com/carlosbne" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="mailto:carlos.506@gmail.com?subject=Hello%20from%20Carlos%27s%20site"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+            <a href="https://twitter.com/oxecarls"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></a>
+        </div>
     </footer>
     <script src="/assets/js/main.js"></script>
 </body>
