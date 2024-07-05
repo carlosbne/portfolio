@@ -388,7 +388,7 @@ a{
 }
 
 .base h3{
-    padding: 1em 0;
+    padding: 1em 0 .5em 0;
     display: block;
     width: 45%;
     text-wrap: wrap;
@@ -429,7 +429,29 @@ a{
 .contact{
     margin: 0 0 2em 0;
 }
-
+.services > section{
+    display: flex;
+    flex-direction: row;
+}
+.services ol{
+    width: 50%;
+}
+.icons{
+    font-size: 3em;
+    color: #0f3b54;
+    max-width: 50%;
+    height: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.icons i{
+    height: 1em;
+    width: 1em;
+    padding: .2em .2em;
+    margin: 5px;
+    /* border: 1px solid #2e1c2b; */
+}
 
 /* Footer */
 
@@ -467,6 +489,10 @@ a{
     }
     .base h3{
         width: 80vw;
+    }
+    .services ul{
+        display: flex;
+        width: 90%;
     }
 
     .container{
