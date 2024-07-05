@@ -11,14 +11,14 @@
     --color05: #001B33;
 
     /* Try colors */
-    --color-background: #e4eeff;
+    --color-second: #e4eeff;
     --color-text: #003b4a;
 }
 
 body, html{
     padding: 0;
     margin: 0;
-    color: var(--color-background);
+    /* color: var(--color-second); */
     font-family: var(--font-standard);
     scroll-behavior: smooth;
 }
@@ -64,6 +64,7 @@ body.lock-scroll {
 
 .header-main{
     text-align: center;
+    color: #ffffff;
 }
 .header-main p{
     font-size: 1.2em;
@@ -71,14 +72,13 @@ body.lock-scroll {
 }
 h1{
     letter-spacing: 4px;
-    color: #ffffff;
+    
     font-size: 2.5em;
     margin: 0;
 }
 
 h2{
     letter-spacing: 4px;
-    color: #ffffff;
     font-size: 1.3em;
     margin: 5px;
 }
@@ -388,9 +388,34 @@ a{
 }
 
 .base h3{
+    padding: 1em 0;
+    display: block;
     width: 45%;
     text-wrap: wrap;
     font-size: 2em;
+    flex-direction: column;
+}
+
+.base p{
+    padding: .8em 0;
+    line-height: normal;
+}
+
+.base h3::after{
+    background: transparent;
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: .5em;
+    width: 6em;
+}
+
+.base h3:after {
+    background: var(--color05);
+}
+
+.base li{
+    padding: .2em;
 }
 
 .emphasis{
@@ -402,7 +427,7 @@ a{
     width: 60%;
 }
 .contact{
-    margin: 0;
+    margin: 0 0 2em 0;
 }
 
 
@@ -415,14 +440,15 @@ a{
     align-items: center;
     background-color: #0F3B54;
     justify-content: space-between;
+    color: var(--color-second);
 }
-.footer p, .footer-links{
+.footer a, .footer-links{
     padding: 0 20px;
 }
 .footer-links a{
     padding: 5px;
 }
-.footer-links a:hover{
+.footer a:hover{
     color: #e4eeff;
 }
 /* Resposive */
@@ -467,7 +493,7 @@ a{
         flex-direction: column-reverse;
         height: max-content;
     }
-    .footer p{
+    .footer a{
         margin: 5px;
     }
     .footer-links{
