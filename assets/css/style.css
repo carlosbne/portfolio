@@ -419,7 +419,8 @@ a{
 }
 
 .emphasis{
-    border-bottom: var(--color03) 1px solid;
+    font-weight: bold;
+/*     text-decoration: underline; */
 }
 
 .about h3{
@@ -444,12 +445,18 @@ a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: baseline;
+}
+.icons ol li{
+    display: inline-block;
+    text-align: center;
 }
 .icons i{
     height: 1em;
     width: 1em;
     padding: .2em .2em;
-    margin: 5px;
+    text-align: center;
+    justify-content: center ;
     /* border: 1px solid #2e1c2b; */
 }
 
