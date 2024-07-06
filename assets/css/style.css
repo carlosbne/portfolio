@@ -271,16 +271,14 @@ h2{
     overflow: hidden;
 }
 
-
+/* animated fade in*/
 .hidden{
     opacity: 0;
-    /* filter: blur(1px); */
     transition: all 1.5s;
 }
 
 .show{
     opacity: 1;
-    /* filter: blur(0); */
 }
 
 /* Cards */
@@ -414,9 +412,7 @@ a{
     background: var(--color05);
 }
 
-.base li{
-    padding: .2em;
-}
+
 
 .emphasis{
     font-weight: bold;
@@ -430,34 +426,34 @@ a{
 .contact{
     margin: 0 0 2em 0;
 }
-.services > section{
+.services{
     display: flex;
     flex-direction: row;
 }
-.services ol{
-    width: 50%;
-}
-.icons{
+
+.services-icons{
     font-size: 3em;
     color: #0f3b54;
-    max-width: 50%;
     height: 4em;
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: baseline;
+    max-width: 50%;
 }
-.icons ol li{
+
+.services-icons ul li{
+    vertical-align: baseline;
     display: inline-block;
     text-align: center;
+    padding: 1.5em;
 }
-.icons i{
-    height: 1em;
-    width: 1em;
-    padding: .2em .2em;
-    text-align: center;
-    justify-content: center ;
-    /* border: 1px solid #2e1c2b; */
+
+
+.services-text{
+    width: 50%;
+}
+.services-text ol li{
+    padding: .3em 0;
 }
 
 /* Footer */
